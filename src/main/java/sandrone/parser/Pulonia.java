@@ -1,5 +1,6 @@
 package sandrone.parser;
 
+import sandrone.command.AiQueryCommand;
 import sandrone.command.Command;
 import sandrone.command.DeleteCommand;
 import sandrone.command.DeleteGeneratorCommand;
@@ -63,6 +64,9 @@ public class Pulonia {
             return new HelpCommand();
         case BYE:
             return new ExitCommand();
+        case AI:
+            String userPrompt = arguments.trim();
+            return new AiQueryCommand(userPrompt);
         default:
             throw new SandroneException(Messages.ERROR_INVALID_COMMAND);
         }

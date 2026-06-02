@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
+import javafx.scene.text.Font;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import sandrone.Sandrone;
@@ -29,6 +30,8 @@ public class Main extends Application {
             Image icon = new Image(getClass().getResourceAsStream("/images/sandrone_puppet_master.jpg"));
             stage.getIcons().add(icon);
             stage.setTitle("Sandrone");
+
+            Font.loadFont(getClass().getResourceAsStream("/fonts/zh-cn.ttf"), 20);
 
             stage.show();
         } catch (IOException e) {
