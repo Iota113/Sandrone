@@ -22,6 +22,7 @@ public enum CommandType {
     DRECUR("drecur"),
     SYNC("sync"),
     HELP("help"),
+    AI("@ai"),
     DEFAULT("");
 
     private final String keyword;

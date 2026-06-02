@@ -11,7 +11,7 @@
     -fx-background-radius: 30;
     -fx-border-radius: 30;
     -fx-padding: 8;
-    -fx-text-fill: black;
+    -fx-font-family: "HYWenHei 85W";
 }
 
 .text-field:focused {
@@ -19,10 +19,11 @@
 }
 
 .button {
-    -fx-background-color: #8D6E63; /* Dark Bronze/Brown */
-    -fx-text-fill: #E0E0E0; /* Light grey text for readability */
+    -fx-background-color: #8D6E63;
+    -fx-text-fill: #E0E0E0;
     -fx-background-radius: 20;
     -fx-font-weight: bold;
+    -fx-font-family: "HYWenHei 85W";
 }
 
 .button:hover {
@@ -36,20 +37,18 @@
 }
 
 .scroll-pane,
-.scroll-pane > .viewport, /* Added the '>' and '.' */
-#dialogContainer {       /* Ensure your VBox ID is included */
+.scroll-pane > .viewport,
+#dialogContainer {
     -fx-background-color: transparent;
     -fx-background: transparent;
 }
 
-/* The background/track of the scrollbar */
 .scroll-bar {
-    -fx-background-color: #1A1A1D; /* Dark charcoal to match text field border */
+    -fx-background-color: #1A1A1D;
     -fx-background-insets: 2;
     -fx-padding: 4;
 }
 
-/* The actual draggable part (The Thumb) */
 .scroll-bar .thumb {
     -fx-background-color: #7B1113;
     -fx-background-insets: 2;
