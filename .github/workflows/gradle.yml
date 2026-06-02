@@ -33,7 +33,7 @@ jobs:
         if: runner.os == 'macOS'
         run: brew install dos2unix
 
-        - name: Build and check with Gradle
+      - name: Build and check with Gradle
         run: |
           if [ "${{ runner.os }}" = "Windows" ]; then
             gradlew check
